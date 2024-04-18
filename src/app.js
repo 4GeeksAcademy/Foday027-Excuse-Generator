@@ -19,18 +19,18 @@ window.onload = function() {
     "while I was praying"
   ];
 
-  function rand(length) {
+  function random(length) {
     let number = Math.floor(Math.random() * length);
     return number;
   }
   let sentence =
-    who[rand(who.length)] +
+    who[random(who.length)] +
     " " +
-    action[rand(action.length)] +
+    action[random(action.length)] +
     " " +
-    what[rand(what.length)] +
+    what[random(what.length)] +
     " " +
-    when[rand(when.length)];
+    when[random(when.length)];
 
   const el = document.getElementById("excuse");
   el.innerHTML = sentence;
